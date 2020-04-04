@@ -1,4 +1,61 @@
+/* * {
+    border: 1px solid black;
+} */
+
 p {
     color: blue;
     background-color: salmon;
 }
+
+body {
+    margin: 0px auto;
+    width: 960px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(224, 224, 164);
+}
+
+header {
+    height: 200 px
+}
+
+header > img {
+    width: 150px;
+    margin: 10px;
+    margin-left: 100px;
+    float: left;
+}
+
+header > h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+header > nav {
+    float: right;
+    margin-top: 5px;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    width: 100px;
+    border-radius: 25px;;
+    background-color: gray;
+    border: ipx solid black;
+    margin: 5px;
+    text-align: center;
+
+}
+
+header > nav > ul > li > a {
+    color: inherit;
+}
+
+#first {
+    background-color: hotpink;
+    border: solid green;
+}
+
+.blue {
+    background-color: khaki;
+}
+
