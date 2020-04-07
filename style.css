@@ -3,15 +3,15 @@
 } */
 
 p {
-    color: blue;
-    background-color: salmon;
+    color: white;
+    background-color: none;
 }
 
 body {
     margin: 0px auto;
     width: 960px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(224, 224, 164);
+    background-color: blue;
 }
 
 header {
@@ -50,12 +50,12 @@ header > nav > ul > li > a {
     color: inherit;
 }
 
-#first {
+/* #first {
     background-color: hotpink;
     border: solid green;
-}
+} */
 
-.blue {
+/* .blue {
     background-color: khaki;
-}
+} */
 
