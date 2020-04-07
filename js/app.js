@@ -45,15 +45,17 @@ if (hourNow > 18) {
     greeting = 'Welcome!';
 }
 
-return document.write('<h3>' + greeting + '</h3>');
+document.write('<h3>' + greeting + '</h3>');
 }
+
 
 
 
 function askName() {
     var userName = prompt ('What is your name?');
-    return document.write('<h3>' + 'Hello, ' + userName + '</h3>');
+    document.write('<h3>' + 'Hello, ' + userName + '</h3>');
 }
+
 
 
 
@@ -71,6 +73,6 @@ if (response === 'yes') {
     message = 'Whether you are concerned about COVID or not, here are some observations. Please, read on.';
 }
 
- return document.write('<h3>' + message + '</h3>');
+    document.write('<h3>' + message + '</h3>');
 }
 

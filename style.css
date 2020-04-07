@@ -31,7 +31,7 @@ img {
     width: 450px;
     height: 300px;
     margin: 10px;
-    margin-left: 100px;
+    margin-right: 100px;
     float: left;
 }
 
@@ -46,7 +46,9 @@ header > h1 {
 
 header > nav {
     float: right;
-    margin-top: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
 
 header > nav > ul > li {
@@ -54,7 +56,7 @@ header > nav > ul > li {
     width: 100px;
     border-radius: 25px;;
     background-color: rgb(103, 151, 170);
-    border: ipx solid black;
+    border: 1px solid black;
     margin: 5px;
     text-align: center;
 
