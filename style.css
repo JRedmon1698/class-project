@@ -3,19 +3,25 @@
 } */
 
 p {
-    color: white;
+    color: rgb(39, 14, 39);
     background-color: none;
+}
+
+img {
+    /* float: left; */
+    margin-left: 1px;
+    margin-bottom: 70px;
 }
 
 body {
     margin: 0px auto;
     width: 960px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: blue;
+    background-color: rgb(167, 167, 241);
 }
 
 header {
-    height: 200 px
+    /* height: 200 px */
 }
 
 header > img {
@@ -28,6 +34,10 @@ header > img {
 header > h1 {
     margin: 10px;
     text-align: center;
+}
+
+#firstH3 {
+    margin-top: 175px;
 }
 
 header > nav {
