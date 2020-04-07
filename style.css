@@ -2,8 +2,12 @@
     border: 1px solid black;
 } */
 
+body {
+    background-image: image(empty-city.jpg);
+}
+
 p {
-    color: rgb(39, 14, 39);
+    color: rgb(53, 25, 53);
     background-color: none;
 }
 
@@ -17,7 +21,7 @@ body {
     margin: 0px auto;
     width: 960px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(167, 167, 241);
+    background-color: rgb(197, 133, 73);
 }
 
 header {
