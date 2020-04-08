@@ -32,7 +32,7 @@ function askPreference() {
     var message;
 
     if (response === 'yes') {
-        message = 'How has COVID changed daily life? Please, read on.';
+        message = 'COVID is concerning, isn\'t it?';
     } else if (response === 'no') {
         message = 'Maybe you are not concerned, but you probably know someone who is.';
     } else if (response === undefined) {
@@ -41,5 +41,49 @@ function askPreference() {
         message = 'Whether you are concerned about COVID or not, here are some observations. Please, read on.';
     }
     return document.write('<h3>' + message + '</h3>');
+    
 }
 
+
+function getItemType() {
+    var response = prompt('Would you like to buy a gloves or a mask?');
+    var item;
+  
+    while (response !== 'gloves' && response !== 'mask') {
+      response = prompt('PLEASE ANSWER EXACT!  Would you like to purchase gloves or a mask?')
+    }
+    if (response === 'gloves') {
+      item = '<img src="images/house.png">';
+    } else if (response === 'mask') {
+      item = '<img src="images/hotel.png">'
+    }
+    return item;
+  }
+  
+  function howMany(){
+    var count = prompt('Great, how many would you like?');
+  
+    while(isNaN(count) || count === ''){
+      count = prompt('PLEASE ENTER A NUMBER!  How many would you like?')
+    }
+    return count;
+  }
+  
+  function showOrder(){
+    var result = '';
+  
+    //get the item type
+    var itemType = getItemType(); 
+  
+    //find how many they want
+    var orderTotal = howMany();
+  
+    //create a result with correct number of products
+    for (var i = 0; i < orderTotal; i++){
+      result = result + '<p>' + itemType + '</p>';
+    }
+  
+    // send that order to the web page
+    return document.write(result);
+  }
+  
