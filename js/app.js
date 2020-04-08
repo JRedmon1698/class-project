@@ -1,34 +1,3 @@
-// function hello() {
-//     console.log('Hello, Joe');
-// }
-
-// function helloYou(name) {
-//     console.log('Hello ' + name);
-// }
-
-// username = prompt('What is your name?');
-
-// function helloUserName(username){
-//     console.log('Hello, ' + username);
-// }
-
-// helloUserName(username);
-
-// function joesFavoriteIcecreamery() {
-//     return 'Joe\'s favorite icecreamery is Lopez Island';
-// }
-
-// function faveIcecreamery(iceCream) {
-//     console.log('Joe\'s favorite icecreamery is ' + iceCream);
-// }
-
-// joesFavoriteIcecreamery('Lopez Island'); 
-
-// function makeCake(cakeType, filling, frosting) {
-//     var message = 'I like ' + cakeType + ' cake with ' + filling + ' filling and ' + frosting + ' frosting.';
-//     return message;
-// }
-
 
 function addGreeting() {
     var today = new Date();
