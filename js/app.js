@@ -40,34 +40,42 @@ function askPreference() {
     } else {
         message = 'Whether you are concerned about COVID or not, here are some observations. Please, read on.';
     }
-    return document.write('<h3>' + message + '</h3>');
+    return response;
     
 }
 
 
 function getItemType() {
+    var preference = askPreference();
+    if (preference === 'yes') {
     var response = prompt('Would you like to buy a gloves or a mask?');
     var item;
   
     while (response !== 'gloves' && response !== 'mask') {
-      response = prompt('PLEASE ANSWER EXACT!  Would you like to purchase gloves or a mask?')
+      response = prompt('PLEASE ANSWER YES OR NO! Would you like to purchase gloves or a mask?');
     }
     if (response === 'gloves') {
       item = '<img src="images/house.png">';
     } else if (response === 'mask') {
-      item = '<img src="images/hotel.png">'
+      item = '<img src="images/hotel.png">';
     }
     return item;
-  }
-  
+        }
+        else {
+            item = 'Ok. Please stay safe!';
+        }
+    }
+
   function howMany(){
     var count = prompt('Great, how many would you like?');
   
     while(isNaN(count) || count === ''){
-      count = prompt('PLEASE ENTER A NUMBER!  How many would you like?')
+      count = prompt('PLEASE ENTER A NUMBER!  How many would you like?');
     }
     return count;
   }
+  
+  
   
   function showOrder(){
     var result = '';
