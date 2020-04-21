@@ -95,3 +95,4 @@ function getItemType() {
     return document.write(result);
   }
   
+  ellipse (100, 100, 100, 100);
